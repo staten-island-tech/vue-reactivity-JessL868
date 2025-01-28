@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <h1></h1>
+  <h1>Dessert Delights!</h1>
 </template>
