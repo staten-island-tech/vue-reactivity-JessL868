@@ -1,7 +1,13 @@
+<template>
+  <div>
+    <h2>Cart</h2>
+  </div>
+</template>
+
 <script setup>
 
 </script>
 
-<template>
-  <h1>Dessert Delights!</h1>
-</template>
+<style scoped>
+
+</style>
