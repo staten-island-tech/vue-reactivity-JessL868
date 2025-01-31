@@ -5,16 +5,38 @@ defineProps({
     required: true,
   },
 })
+produce  = [
+  {name: "Broccoli (per lb)",
+    cost: "$2.99"},
+  {name: "Cauliflower (per lb)",
+    cost: "$2.99"},
+  {name: "Apples (per lb)",
+    cost: "$1.99"},
+  {name: "Oranges (per lb)",
+    cost: "$0.99"},
+  {name: "Kiwis (per lb)",
+    cost: "$0.99"},
+  {name: "Bananas (per lb)",
+    cost: "$0.65"},
+  {name: "Tomatoes (per lb)",
+    cost: "$1.99"},
+  {name: "Avocados (per lb)",
+    cost: "$0.99"},
+  {name: "Sweet Potatoes (per lb)",
+    cost: "$0.95"},
+  {name: "Roma Tomatoes (per lb)",
+    cost: "$2.50"},
+  {name: "Lettuce (per lb)",
+    cost: "$0.99"},
+]
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">Dessert Delights!</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
+    <h1 class="green">Nature's Basket</h1>
+    <div class="container">
+
+    </div>
   </div>
 </template>
 
