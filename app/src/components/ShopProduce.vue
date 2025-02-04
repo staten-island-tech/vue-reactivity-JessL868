@@ -1,16 +1,14 @@
 <template>
     <div>
-        <h1> {{ produce }}</h1>
+      <div class="container">
+          <h2 class="card" v-for="prod in produce" :key="[prod.name, prod.cost]"><div class="card">{{ prod.name }} <br> {{ prod.cost }}</div></h2>
+      </div>
     </div>
 </template>
 
 <script setup>
-defineProps({
-    produce: {
-        type: String
-    }
-})
-produce  = [
+
+const produce  = [
   {name: "Broccoli (per lb)",
     cost: "$2.99"},
   {name: "Cauliflower (per lb)",
@@ -55,5 +53,7 @@ produce  = [
 </script>
 
 <style scoped>
-
+.card {
+  flex-direction: row;
+}
 </style>
