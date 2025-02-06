@@ -56,5 +56,9 @@ const products  = [
 .container {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 100%;
+  object-fit:scale-down;
+  flex-wrap: wrap;
 }
 </style>
