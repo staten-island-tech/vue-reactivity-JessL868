@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="container">
-          <ProductCss v-for="product in products" :key="[product.name, product.cost]" :product = "product"/>
+          <ProductCss v-for="product in products" :key="product.name" :product = "product"/>
       </div>
     </div>
 </template>
@@ -57,8 +57,8 @@ const products  = [
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-  object-fit:scale-down;
+  height: 50%;
+  object-fit:contain;
   flex-wrap: wrap;
 }
 </style>

@@ -6,18 +6,20 @@ import ShopProduce from './components/ShopProduce.vue'
 
 <template>
   <header>
+    <h1>Nature's Basket</h1>
     <ShopProduce/>
   </header>
 
-  <RouterView />
+  <RouterView/>
 </template>
 
 <style scoped>
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  align-content:space-evenly;
 }
-
+h1{ 
+  text-align: center;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -52,7 +54,6 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {
@@ -72,6 +73,6 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
-  }
+  } 
 }
 </style>
