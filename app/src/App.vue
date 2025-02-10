@@ -5,10 +5,12 @@ import ShopProduce from './components/ShopProduce.vue'
 </script>
 
 <template>
-  <header>
+  <div class="shop">
     <h1>Nature's Basket</h1>
-    <ShopProduce/>
-  </header>
+    <header>
+      <ShopProduce/>
+    </header>
+  </div>
 
   <RouterView/>
 </template>
@@ -68,7 +70,7 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
+    margin-left: 0rem;
     font-size: 1rem;
 
     padding: 1rem 0;

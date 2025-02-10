@@ -1,12 +1,14 @@
 <template>
     <div>
       <div class="container">
-          <ProductCss v-for="product in products" :key="product.name" :product = "product"/>
+          <ProductCss @click="ordered = ordered" v-for="product in products" :key="product.name" :product = "product"/>
       </div>
+      <h1 v-if="ordered">hi</h1>
     </div>
 </template>
 
 <script setup>
+import HomeView from '../components/HomeView.vue'
 import ProductCss from '../components/ProductCss.vue'
 const products  = [
   {name: "Broccoli (per lb)",
