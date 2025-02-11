@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>Cart</h1>
+    <GroceryCart/>
   </div>
 </template>
 
 <script setup>
+import GroceryCart from '../components/GroceryCart.vue'
 </script>
 
 <style scoped>

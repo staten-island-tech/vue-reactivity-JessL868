@@ -1,6 +1,7 @@
 <template>
     <div>
           <h2 class="card">{{ product.name }} <br> {{ product.cost }}</h2>
+          <slot></slot>
     </div>
 </template>
 
