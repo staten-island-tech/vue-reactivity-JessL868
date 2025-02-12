@@ -1,14 +1,15 @@
 <template>
     <div>
       <div class="container">
-          <ProductCss @click="console.log(product)" v-for="product in products" :key="product.name" :product = "product">Add to Cart</ProductCss>
+          <ProductCss @click="addToCart(product)" v-for="product in products" :key="product.name" :product = "product">Add to Cart</ProductCss>
       </div>
     </div>
 </template>
 
 <script setup>
-import cart from '../components/GroceryCart.vue'
+import { store } from '../cart.js'
 import ProductCss from '../components/ProductCss.vue'
+import cart from '../components/GroceryCart.vue'
 const products  = [
   {name: "Broccoli (per lb)",
     cost: "$2.99"},
@@ -51,6 +52,11 @@ const products  = [
   {name: "Honeydew Melon (per lb)",
     cost: "$8.50"}
 ]
+
+const addToCart = (product) => {
+  store.cart.push(product); 
+};
+
 </script>
 
 <style scoped>
