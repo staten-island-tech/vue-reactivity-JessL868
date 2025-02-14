@@ -9,7 +9,6 @@
 <script setup>
 import { store } from '../cart.js'
 import ProductCss from '../components/ProductCss.vue'
-import cart from '../components/GroceryCart.vue'
 const products  = [
   {name: "Broccoli (per lb)",
     cost: "$2.99"},
